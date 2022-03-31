@@ -12,3 +12,6 @@ environment:
 
 dev_dependencies:
   lints: ^1.0.0
+dependencies: 
+  html: ^0.15.0
+  json_annotation: ^4.4.0
