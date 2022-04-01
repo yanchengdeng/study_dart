@@ -46,7 +46,6 @@ class Circle {
   double radius;
   double area;
   double circumference;
-
   Circle(this.radius)
       : area = pi * radius * radius,
         circumference = pi * 2.0 * radius;
