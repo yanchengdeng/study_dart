@@ -1,6 +1,8 @@
 
 import 'dart:math';
 
+import 'clazz.dart';
+
 ///具体参考 [https://github.com/dart-lang/dart_style]
 
 
@@ -19,6 +21,12 @@ void main(){
 
   var reipcoals = stuff.map<double>((n) => 1/n);
   print(reipcoals);
+
+
+  var person = Employee.fromJson({"fsd":"fsdf"});
+  person.name = "hhh";
+  person.privateAge(1);
+  print(person);
 
 
 }
@@ -49,7 +57,7 @@ class Circle {
   Circle(this.radius)
       : area = pi * radius * radius,
         circumference = pi * 2.0 * radius;
-
-
 }
+
+
 

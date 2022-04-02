@@ -23,7 +23,8 @@ void main(){
   });
 
   Color.values.forEach((element) => print(element.index));
-  
+
+
 }
 class Person{
   String? name;
@@ -46,6 +47,10 @@ class Employee extends Person{
   Employee.fromJson(Map data) : super.fromJson(data){
     print('in Employee is :$data');
   }
+  // _ 下划线开头成员或是函数属于私有成员   是dart 内置特性
+  void  _privateAge(int age) => age +1 ;
+  void  privateAge(int age) => age +1 ;
+
 }
 
 
